@@ -1,0 +1,76 @@
+WEBVTT
+
+NOTE Teks penjelasan; video ini tidak memiliki audio.
+
+00:00:00.000 --> 00:00:03.960
+Hukum Hess: data beberapa reaksi. Entalpi pembentukan: data ΔH°f tiap zat. Energi ikatan: data energi ikatan rata-rata.
+
+00:00:04.000 --> 00:00:07.960
+Semua perhitungan harus mengikuti persamaan reaksi yang ditulis.
+
+00:00:08.000 --> 00:00:12.627
+C(grafit) + ½O₂(g) → CO(g); ΔH₁ = −111 kJ.
+
+00:00:12.667 --> 00:00:17.293
+CO(g) + ½O₂(g) → CO₂(g); ΔH₂ = −283 kJ.
+
+00:00:17.333 --> 00:00:21.960
+Data dibulatkan dan memakai kondisi yang konsisten.
+
+00:00:22.000 --> 00:00:25.960
+CO(g) muncul pada dua sisi yang berlawanan, sehingga saling menghilangkan.
+
+00:00:26.000 --> 00:00:29.960
+C(grafit) + O₂(g) → CO₂(g); ΔH = −111 − 283 = −394 kJ.
+
+00:00:30.000 --> 00:00:33.960
+Entalpi adalah fungsi keadaan: perubahan total bergantung pada keadaan awal dan akhir.
+
+00:00:34.000 --> 00:00:37.627
+Membalik reaksi maju memberi ΔH = +394 kJ.
+
+00:00:37.667 --> 00:00:41.293
+Mengalikan seluruh reaksi maju dengan 2 memberi ΔH = −788 kJ.
+
+00:00:41.333 --> 00:00:44.960
+Jika reaksi balik dikali 2, ΔH = +788 kJ.
+
+00:00:45.000 --> 00:00:49.627
+Reaksi: H₂(g) + Cl₂(g) → 2HCl(g). Data ΔH°f: H₂(g) = 0; Cl₂(g) = 0; HCl(g) = −92,3 kJ/mol.
+
+00:00:49.667 --> 00:00:54.293
+ΔH° reaksi = jumlah koefisien × ΔH°f produk − jumlah koefisien × ΔH°f reaktan.
+
+00:00:54.333 --> 00:00:58.960
+Hasil: 2 × (−92,3) − (0 + 0) = −184,6 kJ.
+
+00:00:59.000 --> 00:01:03.460
+−92,3 kJ/mol ialah entalpi pembentukan per mol HCl(g).
+
+00:01:03.500 --> 00:01:07.960
+−184,6 kJ berlaku untuk persamaan yang menghasilkan 2 mol HCl(g). Pertahankan fase dan kondisi referensinya.
+
+00:01:08.000 --> 00:01:11.627
+Untuk H₂(g) + Cl₂(g) → 2HCl(g), putuskan satu H–H dan satu Cl–Cl, lalu bentuk dua H–Cl.
+
+00:01:11.667 --> 00:01:15.293
+Data dalam kJ/mol ikatan: H–H = 436; Cl–Cl = 243; H–Cl = 432.
+
+00:01:15.333 --> 00:01:18.960
+Pemutusan memerlukan energi; pembentukan melepaskan energi.
+
+00:01:19.000 --> 00:01:22.627
+Energi pemutusan = 436 + 243 = 679 kJ. Besar energi pembentukan = 2 × 432 = 864 kJ.
+
+00:01:22.667 --> 00:01:26.293
+ΔH ≈ energi pemutusan − energi pembentukan = 679 − 864 = −185 kJ.
+
+00:01:26.333 --> 00:01:29.960
+Ini estimasi untuk persamaan tersebut, memakai energi ikatan rata-rata pada fase gas.
+
+00:01:30.000 --> 00:01:34.960
+Periksa persamaan, koefisien, fase, dan tanda.
+
+00:01:35.000 --> 00:01:39.960
+Hess menjumlahkan perubahan; data pembentukan memperhitungkan koefisien; energi ikatan menghasilkan estimasi.
+

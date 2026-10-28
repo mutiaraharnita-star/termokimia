@@ -1,0 +1,69 @@
+Tiga cara menggunakan data ΔH
+
+Video penjelasan teks tanpa suara. Teks berikut memuat penjelasan dan diagram dalam video.
+
+Pilih metode menurut datanya
+
+Hukum Hess: data beberapa reaksi. Entalpi pembentukan: data ΔH°f tiap zat. Energi ikatan: data energi ikatan rata-rata.
+
+Semua perhitungan harus mengikuti persamaan reaksi yang ditulis.
+
+Hess: susun dua tahap reaksi
+
+C(grafit) + ½O₂(g) → CO(g); ΔH₁ = −111 kJ.
+
+CO(g) + ½O₂(g) → CO₂(g); ΔH₂ = −283 kJ.
+
+Data dibulatkan dan memakai kondisi yang konsisten.
+
+Jumlahkan reaksi dan ΔH
+
+CO(g) muncul pada dua sisi yang berlawanan, sehingga saling menghilangkan.
+
+C(grafit) + O₂(g) → CO₂(g); ΔH = −111 − 283 = −394 kJ.
+
+Entalpi adalah fungsi keadaan: perubahan total bergantung pada keadaan awal dan akhir.
+
+Ubah reaksi, sesuaikan ΔH
+
+Membalik reaksi maju memberi ΔH = +394 kJ.
+
+Mengalikan seluruh reaksi maju dengan 2 memberi ΔH = −788 kJ.
+
+Jika reaksi balik dikali 2, ΔH = +788 kJ.
+
+Gunakan entalpi pembentukan
+
+Reaksi: H₂(g) + Cl₂(g) → 2HCl(g). Data ΔH°f: H₂(g) = 0; Cl₂(g) = 0; HCl(g) = −92,3 kJ/mol.
+
+ΔH° reaksi = jumlah koefisien × ΔH°f produk − jumlah koefisien × ΔH°f reaktan.
+
+Hasil: 2 × (−92,3) − (0 + 0) = −184,6 kJ.
+
+Koefisien dan fase menentukan
+
+−92,3 kJ/mol ialah entalpi pembentukan per mol HCl(g).
+
+−184,6 kJ berlaku untuk persamaan yang menghasilkan 2 mol HCl(g). Pertahankan fase dan kondisi referensinya.
+
+Energi ikatan: putus dan bentuk
+
+Untuk H₂(g) + Cl₂(g) → 2HCl(g), putuskan satu H–H dan satu Cl–Cl, lalu bentuk dua H–Cl.
+
+Data dalam kJ/mol ikatan: H–H = 436; Cl–Cl = 243; H–Cl = 432.
+
+Pemutusan memerlukan energi; pembentukan melepaskan energi.
+
+Tuliskan hasil sebagai estimasi
+
+Energi pemutusan = 436 + 243 = 679 kJ. Besar energi pembentukan = 2 × 432 = 864 kJ.
+
+ΔH ≈ energi pemutusan − energi pembentukan = 679 − 864 = −185 kJ.
+
+Ini estimasi untuk persamaan tersebut, memakai energi ikatan rata-rata pada fase gas.
+
+Empat pemeriksaan terakhir
+
+Periksa persamaan, koefisien, fase, dan tanda.
+
+Hess menjumlahkan perubahan; data pembentukan memperhitungkan koefisien; energi ikatan menghasilkan estimasi.

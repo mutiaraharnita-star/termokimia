@@ -1,0 +1,51 @@
+Ke mana kalor berpindah?
+
+Video penjelasan teks tanpa suara. Teks berikut memuat penjelasan dan diagram dalam video.
+
+Tetapkan sistem terlebih dahulu
+
+Pada kompor, sistem adalah zat-zat yang mengalami reaksi pembakaran.
+
+Panci, air, dan udara di sekitarnya merupakan lingkungan.
+
+Ikuti arah perpindahan kalor
+
+Kalor adalah energi yang berpindah karena perbedaan suhu.
+
+Dalam contoh pembakaran, sistem melepaskan kalor. Lingkungan menerima kalor; air menghangat.
+
+Hubungkan kalor dengan entalpi
+
+Pada tekanan tetap, dengan hanya kerja ekspansi atau kompresi, qₚ = ΔH.
+
+qₚ dan ΔH bertanda positif ketika sistem menerima kalor, serta negatif ketika sistem melepaskan kalor.
+
+Tanda mengikuti sistem
+
+Eksoterm: kalor keluar dari sistem; ΔH < 0.
+
+Endoterm: kalor masuk ke sistem; ΔH > 0.
+
+Hitung produk dikurangi reaktan
+
+Model ilustrasi pada basis jumlah reaksi yang sama: H reaktan = 80 kJ; H produk = 30 kJ.
+
+ΔH = H produk − H reaktan = 30 − 80 = −50 kJ. Produk lebih rendah; proses eksoterm.
+
+Balik arah, balik tanda ΔH
+
+Pada reaksi balik, keadaan awal dan akhir bertukar.
+
+ΔH balik = 80 − 30 = +50 kJ. Produk lebih tinggi; proses endoterm.
+
+Baca sumbu diagram dengan tepat
+
+Sumbu vertikal menunjukkan entalpi relatif. Sumbu horizontal menunjukkan kemajuan reaksi.
+
+Diagram ini tidak langsung menunjukkan suhu, waktu, atau laju reaksi.
+
+Gunakan empat langkah ini
+
+Tentukan sistem → ikuti arah kalor → baca tanda ΔH → periksa posisi produk.
+
+Selalu gunakan ΔH = H produk − H reaktan.

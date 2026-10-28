@@ -1,0 +1,16 @@
+
+> termokimia-xi@0.2.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /workspace/scratch/27e0afb8a7c6/termokimia-xi
+
+
+ Test Files  7 passed (7)
+      Tests  73 passed (73)
+   Start at  00:49:32
+   Duration  581ms (import 40%, tests 39%, transform 15%, worker 6%)
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+exit_code=0

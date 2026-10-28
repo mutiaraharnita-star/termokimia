@@ -1,0 +1,61 @@
+{
+  "viewports": [
+    {
+      "cardColumns": "273px",
+      "cards": 3,
+      "clientWidth": 345,
+      "paragraphFont": "16px",
+      "readingOrder": [
+        "journey-sidebar",
+        "quest-paper module-paper"
+      ],
+      "scrollWidth": 345,
+      "smallTargets": [],
+      "viewport": 360
+    },
+    {
+      "cardColumns": "657px",
+      "cards": 3,
+      "clientWidth": 753,
+      "paragraphFont": "16px",
+      "readingOrder": [
+        "journey-sidebar",
+        "quest-paper module-paper"
+      ],
+      "scrollWidth": 753,
+      "smallTargets": [],
+      "viewport": 768
+    },
+    {
+      "cardColumns": "299.328px 299.328px 299.344px",
+      "cards": 3,
+      "clientWidth": 1351,
+      "paragraphFont": "16px",
+      "readingOrder": [
+        "journey-sidebar",
+        "quest-paper module-paper"
+      ],
+      "scrollWidth": 1351,
+      "smallTargets": [],
+      "viewport": 1366
+    }
+  ],
+  "observed": {
+    "ctaOpensProfilePicker": true,
+    "profileChangedFromAlyaToBima": true,
+    "lockedMapM2ShowsM1Prerequisites": true,
+    "storedMaterialProgressPersistsAfterReload": true,
+    "overallAfterOneItem": "1/27",
+    "moduleOneAfterOneItem": "1/9",
+    "previewAfterArrowRightAndReverse": "+40 kJ",
+    "previewDoesNotChangeProgress": true,
+    "moduleLinkFocus": "topic-section-title",
+    "mobileEscapeReturnsFocus": true,
+    "mobileTabFromFinalMapStopGoesToProfile": true
+  },
+  "applicationErrorsAfterFix": [],
+  "limits": [
+    "Ukuran diperiksa melalui iframe Chrome; bukan perangkat fisik.",
+    "Alur lengkap 27 kegiatan, ekspor guru, dan pemutaran tiga video tidak diulang."
+  ]
+}

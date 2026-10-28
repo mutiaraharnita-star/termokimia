@@ -1,0 +1,720 @@
+/* Tema Petualangan Energi untuk seluruh aplikasi, 22 Oktober 2026.
+   Logika pembelajaran tidak diubah; file ini menyatukan UI internal dengan Beranda. */
+
+.app-shell--adventure {
+  min-height: 100vh;
+  background-color: #111d2d;
+  background-image: radial-gradient(#60768925 .8px, transparent .8px);
+  background-size: 16px 16px;
+}
+
+.app-shell--adventure #konten {
+  color: #f5f3df;
+  background: transparent;
+}
+
+.app-shell--adventure > .navbar--adventure .navbar-inner,
+.app-shell--adventure > .demo-strip .page-shell,
+.app-shell--adventure > .site-footer .page-shell,
+.app-shell--adventure #konten > .page-shell,
+.app-shell--adventure #konten .workspace-page,
+.app-shell--adventure #konten .module-page {
+  width: min(1280px, calc(100% - 48px));
+}
+
+/* Navigasi global */
+.navbar--adventure .navbar-link:first-child { color: #c4d2df; }
+.navbar--adventure .navbar-link.is-active,
+.navbar--adventure .navbar-link[aria-current="page"] {
+  color: #ffea9f;
+  background: #29394c;
+  border-color: #5e7184;
+  box-shadow: 2px 2px 0 #0c1724;
+}
+.navbar--adventure .nav-button { padding: 10px 15px; }
+
+/* Kanvas halaman internal */
+.app-shell--adventure .workspace-page,
+.app-shell--adventure .module-page {
+  padding-block: 42px 72px;
+}
+
+.app-shell--adventure .workspace-heading,
+.app-shell--adventure .module-header {
+  position: relative;
+  align-items: flex-end;
+  padding: 0 0 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #3d5269;
+}
+.app-shell--adventure .workspace-heading::before,
+.app-shell--adventure .module-header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 88px;
+  height: 3px;
+  background: #ffe389;
+  box-shadow: 92px 0 0 #aed9c6;
+}
+.app-shell--adventure .workspace-heading .section-eyebrow,
+.app-shell--adventure .module-header .section-eyebrow {
+  color: #aed9c6;
+  font: 700 11px/1.7 var(--quest-mono, 'Courier New', monospace);
+  letter-spacing: 1.2px;
+}
+.app-shell--adventure .workspace-heading h1,
+.app-shell--adventure .module-header h1,
+.app-shell--adventure .locked-page h1 {
+  color: #ffe389;
+  font-family: 'Silkscreen', var(--quest-mono, monospace);
+  font-weight: 400;
+  letter-spacing: -1.4px;
+  line-height: 1.2;
+  text-shadow: 3px 3px 0 #080f19;
+}
+.app-shell--adventure .workspace-heading h1 { font-size: clamp(31px, 3.5vw, 46px); }
+.app-shell--adventure .module-header h1 { font-size: clamp(30px, 3.1vw, 43px); }
+.app-shell--adventure .workspace-heading p:not(.section-eyebrow),
+.app-shell--adventure .module-header p:not(.section-eyebrow) {
+  color: #c3d1dc;
+  max-width: 760px;
+}
+
+/* Tombol dan elemen form */
+.app-shell--adventure .workspace-page .button,
+.app-shell--adventure .module-page .button,
+.app-shell--adventure .module-dialog .button,
+.app-shell--adventure .save-alert .button {
+  border-radius: 0;
+  border-width: 2px;
+  box-shadow: 3px 3px 0 #0b1523;
+  transition: transform .12s, box-shadow .12s, background .12s;
+}
+.app-shell--adventure .workspace-page .button:hover,
+.app-shell--adventure .module-page .button:hover,
+.app-shell--adventure .module-dialog .button:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #0b1523;
+}
+.app-shell--adventure .workspace-page .button:active,
+.app-shell--adventure .module-page .button:active,
+.app-shell--adventure .module-dialog .button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #0b1523;
+}
+.app-shell--adventure .workspace-page .button-primary,
+.app-shell--adventure .module-page .button-primary,
+.app-shell--adventure .module-dialog .button-primary {
+  background: #ffe389;
+  color: #162b3a;
+  border-color: #fff0b8;
+}
+.app-shell--adventure .workspace-page .button-primary:hover,
+.app-shell--adventure .module-page .button-primary:hover,
+.app-shell--adventure .module-dialog .button-primary:hover { background: #fff0aa; }
+.app-shell--adventure .workspace-page .button-secondary,
+.app-shell--adventure .module-page .button-secondary {
+  background: #fffbea;
+  color: #253b49;
+  border-color: #71808a;
+}
+.app-shell--adventure .workspace-heading .button-secondary,
+.app-shell--adventure .module-header .button-secondary {
+  color: #ffeaa5;
+  background: #203249;
+  border-color: #667b91;
+}
+.app-shell--adventure .workspace-page .button-light,
+.app-shell--adventure .module-page .button-light {
+  background: #fffbea;
+  color: #20384a;
+  border-color: #d8d1a9;
+}
+.app-shell--adventure .workspace-page .button-danger,
+.app-shell--adventure .module-page .button-danger {
+  color: #762f28;
+  background: #ffe2d6;
+  border-color: #c87864;
+}
+.app-shell--adventure .workspace-page textarea,
+.app-shell--adventure .workspace-page select,
+.app-shell--adventure .workspace-page input:not([type="range"]):not([type="radio"]):not([type="checkbox"]),
+.app-shell--adventure .module-page textarea,
+.app-shell--adventure .module-page select,
+.app-shell--adventure .module-page input:not([type="range"]):not([type="radio"]):not([type="checkbox"]) {
+  color: #243745;
+  background: #fffdf0;
+  border: 2px solid #7b8890;
+  border-radius: 0;
+  box-shadow: inset 2px 2px 0 #e6e3c9;
+}
+.app-shell--adventure input[type="radio"],
+.app-shell--adventure input[type="checkbox"] { accent-color: #3f675d; }
+
+/* Paper / quest panels */
+.app-shell--adventure .workspace-page .panel,
+.app-shell--adventure .student-record,
+.app-shell--adventure .class-manager,
+.app-shell--adventure .report-card,
+.app-shell--adventure .detail-module,
+.app-shell--adventure .lesson-body,
+.app-shell--adventure .empty-state,
+.app-shell--adventure .remaining-activities {
+  color: #243745;
+  background: #fffbea;
+  border: 2px solid #7b8890;
+  border-radius: 0;
+  outline: 2px solid #17263b;
+  box-shadow: inset 0 0 0 3px #e7e3c9, 4px 4px 0 #080f19;
+}
+.app-shell--adventure .workspace-page .panel h2,
+.app-shell--adventure .report-card h3,
+.app-shell--adventure .section-topline h2,
+.app-shell--adventure .detail-module h2,
+.app-shell--adventure .sources-directory > h2 {
+  color: #243745;
+  font-family: var(--quest-mono, 'Courier New', monospace);
+  font-weight: 800;
+  letter-spacing: -.6px;
+}
+.app-shell--adventure .workspace-page .panel p,
+.app-shell--adventure .workspace-page .prose,
+.app-shell--adventure .lesson-body .prose,
+.app-shell--adventure .detail-module,
+.app-shell--adventure .student-record { color: #4b6166; }
+
+/* Pemilihan profil */
+.app-shell--adventure .role-grid { gap: 22px; }
+.app-shell--adventure .role-teacher {
+  background: #e9f3de;
+  border-color: #718578;
+}
+.app-shell--adventure .panel-icon {
+  color: #244657;
+  background: #ffe389;
+  border: 2px solid #677b7f;
+  border-radius: 0;
+  box-shadow: 3px 3px 0 #c9c6a9;
+}
+.app-shell--adventure .profile-button {
+  color: #273e49;
+  background: #fffdf0;
+  border: 1px solid #87928b;
+  border-radius: 0;
+  box-shadow: 2px 2px 0 #d8d4bd;
+}
+.app-shell--adventure .profile-button:hover {
+  background: #fff0b3;
+  border-color: #5e6f74;
+}
+.app-shell--adventure .profile-button small { color: #66787b; }
+.app-shell--adventure .avatar {
+  color: #244452;
+  background: #aed9c6;
+  border: 1px solid #6e897f;
+  border-radius: 0;
+  font-family: 'Silkscreen', monospace;
+  font-size: 18px;
+}
+.app-shell--adventure .demo-note { color: #aebfcd; }
+.app-shell--adventure .plain-checks { color: #4f6666; }
+
+/* Status dan progres */
+.app-shell--adventure .pill,
+.app-shell--adventure .status-badge {
+  border-radius: 0;
+  font-family: var(--quest-mono, 'Courier New', monospace);
+  font-weight: 700;
+  letter-spacing: .25px;
+  border: 1px solid #8d9788;
+}
+.app-shell--adventure .status-locked { color: #6b5a49; background: #efe4c7; }
+.app-shell--adventure .status-in_progress { color: #244e63; background: #dcebf0; }
+.app-shell--adventure .status-completed { color: #315936; background: #dceccd; }
+.app-shell--adventure .progress-label { color: #51676a; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure progress,
+.app-shell--adventure progress::-webkit-progress-bar { height: 9px; border-radius: 0; background: #c8c9ba; }
+.app-shell--adventure progress::-webkit-progress-value { border-radius: 0; background: #4f8a79; }
+.app-shell--adventure progress::-moz-progress-bar { border-radius: 0; background: #4f8a79; }
+
+/* Ruang siswa */
+.app-shell--adventure .student-overview { gap: 20px; margin-bottom: 30px; }
+.app-shell--adventure .overview-main {
+  border-radius: 0;
+  background: #203249;
+  border: 1px solid #62758b;
+  box-shadow: inset 0 0 0 3px #293a50, 4px 4px 0 #080f19;
+}
+.app-shell--adventure .overview-main h2 {
+  color: #ffe389;
+  font-family: 'Silkscreen', monospace;
+  font-size: clamp(23px, 2.5vw, 31px);
+  line-height: 1.4;
+  text-shadow: 2px 2px 0 #0d1725;
+}
+.app-shell--adventure .overview-main .pill { color: #d8eee2; background: #304d5d; border-color: #6d8a92; }
+.app-shell--adventure .overview-main .progress-label { color: #d2dfe7; }
+.app-shell--adventure .overview-main progress,
+.app-shell--adventure .overview-main progress::-webkit-progress-bar { background: #506175; }
+.app-shell--adventure .overview-main progress::-webkit-progress-value { background: #ffe389; }
+.app-shell--adventure .overview-main progress::-moz-progress-bar { background: #ffe389; }
+.app-shell--adventure .overview-stats > div {
+  color: #243745;
+  background: #fffbea;
+  border: 2px solid #7b8890;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 3px #e7e3c9, 3px 3px 0 #080f19;
+}
+.app-shell--adventure .overview-stats strong {
+  color: #263f4c;
+  font-family: 'Silkscreen', monospace;
+  font-size: 37px;
+}
+.app-shell--adventure .overview-stats strong small,
+.app-shell--adventure .overview-stats > div > span { color: #647574; }
+.app-shell--adventure .inline-note {
+  color: #f4efd5;
+  background: #203249;
+  border: 1px solid #62758b;
+  border-left: 5px solid #ffe389;
+  border-radius: 0;
+  box-shadow: 3px 3px 0 #080f19;
+}
+.app-shell--adventure .inline-note p { color: #c3d1dc; }
+
+/* Kartu modul di ruang siswa */
+.app-shell--adventure .workspace-page .topic-section { padding-block: 38px 10px; }
+.app-shell--adventure .workspace-page .topic-section-heading { color: #f3efd7; }
+.app-shell--adventure .workspace-page .topic-eyebrow { color: #aed9c6; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .workspace-page .topic-section-title { color: #ffe389; font-family: 'Silkscreen', monospace; font-size: clamp(25px, 3vw, 34px); text-shadow: 2px 2px 0 #080f19; }
+.app-shell--adventure .workspace-page .topic-section-intro,
+.app-shell--adventure .workspace-page .topic-sequence-note { color: #c2d0dc; }
+.app-shell--adventure .workspace-page .topic-card {
+  background: #fffbea;
+  border: 2px solid #7b8890;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 3px #e7e3c9, 4px 4px 0 #080f19;
+}
+.app-shell--adventure .workspace-page .topic-title { color: #263e49; font-family: var(--quest-mono, monospace); font-weight: 800; }
+.app-shell--adventure .workspace-page .topic-description,
+.app-shell--adventure .workspace-page .topic-meta,
+.app-shell--adventure .workspace-page .topic-tag { color: #596c69; }
+.app-shell--adventure .workspace-page .topic-icon {
+  color: #264f52;
+  background: #dcebd5;
+  border: 1px solid #86a28f;
+  border-radius: 0;
+}
+.app-shell--adventure .workspace-page .topic-number { color: #667b72; font-family: 'Silkscreen', monospace; }
+
+/* Halaman modul */
+.app-shell--adventure .module-breadcrumb { color: #9fb1c1; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .module-breadcrumb a { color: #ffe39a; }
+.app-shell--adventure .module-breadcrumb .pill { color: #283f49; background: #dceccb; }
+.app-shell--adventure .module-header .status-badge { margin-top: 30px; }
+.app-shell--adventure .module-finished {
+  color: #25434a;
+  background: #dceccb;
+  border: 2px solid #6d8b75;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 #080f19;
+}
+.app-shell--adventure .module-finished p { color: #52685c; }
+.app-shell--adventure .module-layout { gap: 24px; }
+.app-shell--adventure .lesson-sidebar {
+  color: #e8ecdd;
+  background: #203249;
+  border: 1px solid #62758b;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 3px #293a50, 4px 4px 0 #080f19;
+}
+.app-shell--adventure .sidebar-heading h2 { color: #ffe389; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .sidebar-heading > span { color: #abc0cf; }
+.app-shell--adventure .lesson-sidebar .progress-label { color: #c5d3dc; }
+.app-shell--adventure .lesson-sidebar progress,
+.app-shell--adventure .lesson-sidebar progress::-webkit-progress-bar { background: #506175; }
+.app-shell--adventure .lesson-sidebar progress::-webkit-progress-value { background: #aed9c6; }
+.app-shell--adventure .lesson-sidebar progress::-moz-progress-bar { background: #aed9c6; }
+.app-shell--adventure .lesson-nav-item {
+  color: #d6e0e7;
+  border-radius: 0;
+  border: 1px solid transparent;
+}
+.app-shell--adventure .lesson-nav-item:hover { color: #fff1b8; background: #2b4056; }
+.app-shell--adventure .lesson-nav-item.is-active {
+  color: #162b3a;
+  background: #ffe389;
+  border-color: #fff0b8;
+  box-shadow: 2px 2px 0 #0b1523;
+}
+.app-shell--adventure .lesson-nav-item small { color: inherit; opacity: .72; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .lesson-nav-icon {
+  border-radius: 0;
+  background: #334b61;
+  color: #bcd0dc;
+}
+.app-shell--adventure .lesson-nav-item.is-active .lesson-nav-icon { color: #1e4450; background: #fff2b6; }
+.app-shell--adventure .lesson-nav-icon.is-done { color: #254f3f; background: #aed9c6; }
+.app-shell--adventure .module-objectives { color: #c3d1dc; border-color: #465c72; }
+.app-shell--adventure .module-objectives summary { color: #ffeab0; }
+
+.app-shell--adventure .lesson-body {
+  position: relative;
+  padding: 34px;
+  color: #243745;
+}
+.app-shell--adventure .lesson-body::before {
+  content: 'CATATAN LAB';
+  position: absolute;
+  top: -11px;
+  left: 24px;
+  padding: 4px 9px;
+  color: #283944;
+  background: #ffe389;
+  font: 700 10px/1.4 var(--quest-mono, monospace);
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 0 #2e3a40;
+}
+.app-shell--adventure .lesson-body > h2 {
+  color: #243745;
+  font-family: var(--quest-mono, monospace);
+  font-size: clamp(24px, 2.5vw, 31px);
+  font-weight: 800;
+  line-height: 1.35;
+}
+.app-shell--adventure .lesson-title-row .pill { color: #24424a; background: #dceccb; }
+.app-shell--adventure .lesson-title-row .caption,
+.app-shell--adventure .lesson-source,
+.app-shell--adventure .lesson-source a { color: #667675; }
+.app-shell--adventure .lesson-pagination { border-color: #c5c6b6; }
+.app-shell--adventure .lesson-body .text-button { color: #31565d; border-color: #82958b; }
+
+/* Materi / kasus / contoh */
+.app-shell--adventure .formula-box,
+.app-shell--adventure .concept-callout,
+.app-shell--adventure .example-prompt,
+.app-shell--adventure .case-scenario,
+.app-shell--adventure .case-discussion,
+.app-shell--adventure .transcript,
+.app-shell--adventure .assumption-box,
+.app-shell--adventure .student-response {
+  border-radius: 0;
+}
+.app-shell--adventure .formula-box {
+  color: #21414d;
+  background: #dcebd8;
+  border: 2px solid #7f9b8c;
+  box-shadow: 3px 3px 0 #c7c6ad;
+}
+.app-shell--adventure .concept-callout {
+  background: #fff1bc;
+  border-left: 4px solid #c69b32;
+}
+.app-shell--adventure .example-prompt,
+.app-shell--adventure .case-scenario { background: #eef0d7; border: 1px solid #b6baa5; }
+.app-shell--adventure .case-discussion { background: #dcebd8; border: 1px solid #9bb09f; }
+.app-shell--adventure .worked-steps > li > span {
+  border-radius: 0;
+  color: #1c3e49;
+  background: #ffe389;
+  border: 1px solid #aa9459;
+  font-family: var(--quest-mono, monospace);
+}
+.app-shell--adventure .case-question > span { color: #304c54; }
+.app-shell--adventure .saved-label { color: #326249; }
+.app-shell--adventure .field-error { color: #7d332c; background: #ffe0d4; border-color: #c37e6c; border-radius: 0; }
+
+/* Video */
+.app-shell--adventure .video-activity video {
+  border-radius: 0;
+  border: 2px solid #687985;
+  box-shadow: 4px 4px 0 #c9c5a8;
+}
+.app-shell--adventure .transcript { border-color: #aab0a0; background: #f2f0dd; }
+.app-shell--adventure .transcript summary { color: #324e55; }
+
+/* Simulasi */
+.app-shell--adventure .simulation-workbench {
+  color: #243745;
+  background: #eef0d7;
+  border: 2px solid #858f84;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 3px #e1e1c8;
+}
+.app-shell--adventure .simulation-controls,
+.app-shell--adventure .hess-card {
+  border-radius: 0;
+}
+.app-shell--adventure .slider-field { color: #445e64; }
+.app-shell--adventure .slider-field > strong { color: #24444c; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure input[type="range"] { accent-color: #416f66; }
+.app-shell--adventure .simulation-result {
+  color: #f6f0d2;
+  background: #203249;
+  border: 1px solid #607389;
+  border-radius: 0;
+  box-shadow: 3px 3px 0 #0b1523;
+}
+.app-shell--adventure .simulation-result h3 { color: #ffe389; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .simulation-result p,
+.app-shell--adventure .simulation-result small { color: #d0dce4; }
+.app-shell--adventure .result-metrics > div {
+  color: #243745;
+  background: #fffbea;
+  border: 1px solid #b8b8a6;
+  border-radius: 0;
+}
+.app-shell--adventure .target-equation { border-color: #a9ad9d; }
+.app-shell--adventure .target-equation strong,
+.app-shell--adventure .chemical-equation { color: #243f4a; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .hess-card {
+  background: #fffdf0;
+  border: 1px solid #9aa69a;
+  box-shadow: 2px 2px 0 #d1cfb8;
+}
+
+/* Kuis */
+.app-shell--adventure .quiz-panel { color: #2a424a; }
+.app-shell--adventure .quiz-intro,
+.app-shell--adventure .quiz-meta { color: #617374; }
+.app-shell--adventure .question-nav button {
+  border-radius: 0;
+  border: 1px solid #89948d;
+  background: #f2f0dc;
+  color: #3d565d;
+}
+.app-shell--adventure .question-nav button.is-active {
+  color: #1d3441;
+  background: #ffe389;
+  box-shadow: 2px 2px 0 #b8b39d;
+}
+.app-shell--adventure .question-nav button.is-answered { background: #dcebd6; }
+.app-shell--adventure .quiz-panel fieldset { border-color: #b7b8a8; }
+.app-shell--adventure .quiz-panel legend { color: #243f49; }
+.app-shell--adventure .quiz-option {
+  color: #354e54;
+  background: #fffdf0;
+  border: 1px solid #9ca79d;
+  border-radius: 0;
+}
+.app-shell--adventure .quiz-option:hover { background: #fff2bd; border-color: #817451; }
+.app-shell--adventure .quiz-option.is-selected { background: #fff0ae; border-color: #8d7642; box-shadow: 2px 2px 0 #c5c0a7; }
+.app-shell--adventure .option-letter {
+  border-radius: 0;
+  color: #24414b;
+  background: #e2e5d2;
+  font-family: var(--quest-mono, monospace);
+}
+.app-shell--adventure .answer-feedback { border-radius: 0; }
+.app-shell--adventure .feedback-correct { color: #315a3c; background: #dceccb; border-color: #8aa679; }
+.app-shell--adventure .feedback-review { color: #6d4936; background: #f5e1c1; border-color: #b99163; }
+.app-shell--adventure .quiz-score {
+  color: #f7efd1;
+  background: #203249;
+  border: 1px solid #61758b;
+  border-radius: 0;
+  box-shadow: 3px 3px 0 #0b1523;
+}
+.app-shell--adventure .quiz-score strong { color: #ffe389; font-family: 'Silkscreen', monospace; }
+
+/* Halaman terkunci */
+.app-shell--adventure .locked-page {
+  color: #f4efd7;
+  text-align: center;
+  padding: 44px 24px 20px;
+}
+.app-shell--adventure .locked-page > svg { color: #ffe389; }
+.app-shell--adventure .locked-page > p { color: #c3d1dc; }
+.app-shell--adventure .locked-page .remaining-activities { margin-inline: auto; color: #334b51; }
+.app-shell--adventure .locked-page .text-button { color: #ffe9a5; border-color: #738596; }
+
+/* Ruang guru */
+.app-shell--adventure .teacher-toolbar {
+  padding: 16px 18px;
+  color: #dce6eb;
+  background: #203249;
+  border: 1px solid #61758a;
+  box-shadow: 3px 3px 0 #080f19;
+}
+.app-shell--adventure .teacher-toolbar select { background: #fffbea; color: #243745; }
+.app-shell--adventure .teacher-toolbar > span { color: #b8c9d5; }
+.app-shell--adventure .teacher-stats > article {
+  color: #243745;
+  background: #fffbea;
+  border: 2px solid #7b8890;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 3px #e7e3c9, 3px 3px 0 #080f19;
+}
+.app-shell--adventure .teacher-stats strong { color: #263f4c; font-family: 'Silkscreen', monospace; font-size: 31px; }
+.app-shell--adventure .teacher-stats span:not(.stat-symbol),
+.app-shell--adventure .teacher-stats small { color: #617576; }
+.app-shell--adventure .teacher-stats svg,
+.app-shell--adventure .teacher-stats .stat-symbol { color: #4c7768; }
+.app-shell--adventure .student-record { overflow: hidden; }
+.app-shell--adventure .student-record-heading,
+.app-shell--adventure .student-record-footer { background: #f2f0dc; border-color: #c5c5b5; }
+.app-shell--adventure .student-name h3 { color: #28434b; }
+.app-shell--adventure .student-name div > span,
+.app-shell--adventure .student-record-footer { color: #647678; }
+.app-shell--adventure .student-module-cell:not(:last-child) { border-color: #c9c8b7; }
+.app-shell--adventure .student-module-cell .section-eyebrow { color: #53716a; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .student-module-cell p,
+.app-shell--adventure .student-module-cell small { color: #617374; }
+.app-shell--adventure .report-card > svg { color: #426f65; }
+.app-shell--adventure .report-card p { color: #617474; }
+.app-shell--adventure .report-message { color: #c6d5dc; }
+.app-shell--adventure .class-manager > summary { color: #29464d; }
+.app-shell--adventure .class-manager-content { color: #425b61; }
+.app-shell--adventure .student-edit-row,
+.app-shell--adventure .delete-class-row { border-color: #c8c8b7; }
+.app-shell--adventure .delete-class-row p { color: #637475; }
+.app-shell--adventure .teacher-preview { border-color: #52677a; }
+.app-shell--adventure .teacher-preview h2 { color: #ffe389; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .teacher-preview p { color: #c3d2da; }
+
+/* Detail siswa */
+.app-shell--adventure .student-detail > .back-link { color: #ffe7a0; border-color: #738596; }
+.app-shell--adventure .detail-module { margin-bottom: 24px; }
+.app-shell--adventure .score-line,
+.app-shell--adventure .detail-section > p { color: #617472; }
+.app-shell--adventure .detail-section { border-color: #c9c8b8; }
+.app-shell--adventure .detail-section > summary { color: #304b52; }
+.app-shell--adventure .detail-section > summary::before { color: #4e766c; }
+.app-shell--adventure .item-checklist li { border-bottom: 1px dotted #d1cfb9; }
+.app-shell--adventure .item-checklist li > small { color: #667a78; }
+.app-shell--adventure .attempt-detail {
+  background: #f2f0dc;
+  border-color: #b9bdad;
+  border-radius: 0;
+}
+.app-shell--adventure .attempt-title > span,
+.app-shell--adventure .answer-detail-list small,
+.app-shell--adventure .simulation-summary small { color: #637676; }
+.app-shell--adventure .answer-detail-list li { border-color: #cbcab9; }
+.app-shell--adventure .answer-status { border-radius: 0; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .answer-correct { color: #315a3c; background: #dceccb; }
+.app-shell--adventure .answer-wrong { color: #7c3f32; background: #f5d9cd; }
+.app-shell--adventure .answer-empty { color: #58686d; background: #e5e5d6; }
+.app-shell--adventure .student-response { background: #eef0d7; border: 1px solid #c0c1ae; }
+
+/* Panduan dan sumber */
+.app-shell--adventure .glossary dt { color: #2f5c53; }
+.app-shell--adventure .glossary dd { color: #586c6c; }
+.app-shell--adventure .sources-directory { color: #f4efd7; }
+.app-shell--adventure .sources-directory > h2 { color: #ffe389; }
+.app-shell--adventure .sources-directory > p { color: #c3d1dc; }
+.app-shell--adventure .source-row {
+  padding: 18px;
+  margin-bottom: 10px;
+  background: #203249;
+  border: 1px solid #5f7389;
+  box-shadow: 3px 3px 0 #080f19;
+}
+.app-shell--adventure .source-row > span {
+  color: #213f49;
+  background: #ffe389;
+  border-radius: 0;
+  font-family: var(--quest-mono, monospace);
+}
+.app-shell--adventure .source-row h3,
+.app-shell--adventure .source-row h3 a { color: #fff1b4; }
+.app-shell--adventure .source-row p,
+.app-shell--adventure .source-row small { color: #bdccd6; }
+
+/* Dialog dari peta Beranda */
+.app-shell--adventure .module-dialog {
+  color: #243745;
+  background: #fffbea;
+  border: 2px solid #71808a;
+  border-radius: 0;
+  outline: 2px solid #17263b;
+  box-shadow: inset 0 0 0 3px #e7e3c9, 6px 6px 0 #080f19;
+}
+.app-shell--adventure .module-dialog::backdrop { background: #09111ccc; backdrop-filter: blur(2px); }
+.app-shell--adventure .module-dialog .dialog-icon { border-radius: 0; color: #244452; background: #aed9c6; border: 1px solid #718d83; }
+.app-shell--adventure .module-dialog h2 { color: #243745; font-family: var(--quest-mono, monospace); font-weight: 800; }
+.app-shell--adventure .module-dialog .dialog-description,
+.app-shell--adventure .module-dialog .intro-copy p,
+.app-shell--adventure .module-dialog .scope-note,
+.app-shell--adventure .module-dialog .objectives-list li { color: #596b6b; }
+.app-shell--adventure .module-dialog .intro-equation { color: #24434c; background: #dcebd8; border-radius: 0; }
+.app-shell--adventure .module-dialog .prerequisite-message { color: #624d32; background: #f4e7c6; border-radius: 0; border-color: #c0a66c; }
+.app-shell--adventure .icon-button { border-radius: 0; }
+
+/* Status penyimpanan dan footer */
+.app-shell--adventure .save-alert {
+  color: #5e402f;
+  background: #ffe4cc;
+  border-color: #b78062;
+  box-shadow: 0 4px 0 #0c1724;
+}
+.app-shell--adventure .save-alert .text-button { color: #6a3428; border-color: #a86d55; }
+.app-shell--adventure .site-footer { margin-top: 0; }
+
+@media (max-width: 900px) {
+  .app-shell--adventure > .navbar--adventure .navbar-inner,
+  .app-shell--adventure > .demo-strip .page-shell,
+  .app-shell--adventure > .site-footer .page-shell,
+  .app-shell--adventure #konten > .page-shell,
+  .app-shell--adventure #konten .workspace-page,
+  .app-shell--adventure #konten .module-page { width: calc(100% - 32px); }
+  .app-shell--adventure .workspace-heading,
+  .app-shell--adventure .module-header { align-items: flex-start; }
+  .app-shell--adventure .lesson-body { padding: 30px 24px; }
+  .app-shell--adventure .module-layout { gap: 18px; }
+  .app-shell--adventure .lesson-sidebar nav { scrollbar-color: #70859a #203249; }
+  .app-shell--adventure .lesson-nav-item { min-width: 220px; }
+  .app-shell--adventure .teacher-toolbar { align-items: stretch; }
+}
+
+@media (max-width: 680px) {
+  .app-shell--adventure .workspace-page,
+  .app-shell--adventure .module-page { padding-block: 30px 50px; }
+  .app-shell--adventure .workspace-heading,
+  .app-shell--adventure .module-header { margin-bottom: 24px; padding-bottom: 21px; }
+  .app-shell--adventure .workspace-heading h1 { font-size: 30px; }
+  .app-shell--adventure .module-header h1 { font-size: 28px; }
+  .app-shell--adventure .workspace-heading p:not(.section-eyebrow),
+  .app-shell--adventure .module-header p:not(.section-eyebrow) { font-size: 15px; }
+  .app-shell--adventure .workspace-page .panel,
+  .app-shell--adventure .lesson-body,
+  .app-shell--adventure .detail-module { padding: 22px 18px; }
+  .app-shell--adventure .lesson-body::before { left: 17px; }
+  .app-shell--adventure .role-grid { gap: 18px; }
+  .app-shell--adventure .student-overview { gap: 14px; }
+  .app-shell--adventure .overview-main { padding: 24px 20px; }
+  .app-shell--adventure .overview-main h2 { font-size: 23px; }
+  .app-shell--adventure .overview-stats strong { font-size: 29px; }
+  .app-shell--adventure .teacher-stats strong { font-size: 27px; }
+  .app-shell--adventure .source-row { padding: 15px; }
+  .app-shell--adventure .quiz-option { padding: 14px 12px; }
+  .app-shell--adventure .simulation-workbench { padding: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-shell--adventure .workspace-page *,
+  .app-shell--adventure .module-page * { transition: none !important; animation: none !important; }
+}
+
+/* Koreksi state khusus komponen */
+.app-shell--adventure .question-nav button.is-current {
+  color: #162b3a;
+  background: #ffe389;
+  border-color: #fff0b8;
+  box-shadow: 2px 2px 0 #b8b39d;
+}
+.app-shell--adventure .quiz-option.is-correct {
+  color: #254c37;
+  background: #dceccb;
+  border-color: #719267;
+}
+.app-shell--adventure .simulation-result .section-eyebrow { color: #aed9c6; }
+.app-shell--adventure .simulation-result .result-metrics span { color: #607272; }
+.app-shell--adventure .simulation-result .result-metrics strong { color: #263f4c; }
+.app-shell--adventure .quiz-score strong small { color: #c5d4dc; }
+.app-shell--adventure .quiz-intro h2 { color: #243f49; font-family: var(--quest-mono, monospace); }
+.app-shell--adventure .quiz-intro p { color: #607273; }
+.app-shell--adventure .large-symbol { color: #244957; background: #ffe389; border-radius: 0; }
+.app-shell--adventure .preview-question { border-color: #c9c7b5; }

@@ -1,0 +1,55 @@
+Larutan hangat, reaksi bertanda apa?
+
+Video penjelasan teks tanpa suara. Teks berikut memuat penjelasan dan diagram dalam video.
+
+Mulai dari model kalorimeter
+
+Model ilustrasi: kalor wadah dan kehilangan kalor ke luar diabaikan; kalor jenis tetap, tanpa perubahan fase.
+
+Tekanan tetap; hanya kerja ekspansi atau kompresi. Massa yang dipakai ialah massa larutan.
+
+Hitung perubahan suhu
+
+Massa larutan 100 g. Suhu awal 25 °C dan suhu akhir 30 °C.
+
+ΔT = T akhir − T awal = 30 − 25 = +5 °C.
+
+Larutan menerima kalor
+
+Gunakan kalor jenis model c = 4,18 J/(g·°C).
+
+q larutan = mcΔT = 100 × 4,18 × 5 = +2.090 J.
+
+Tanda positif berarti larutan menerima kalor.
+
+Reaksi melepaskan kalor
+
+Pada model ideal, q reaksi + q larutan = 0.
+
+q reaksi = −q larutan = −2.090 J. Reaksi bersifat eksoterm; larutan menghangat.
+
+Ubah joule menjadi kilojoule
+
+1 kJ = 1.000 J. Untuk mengubah J menjadi kJ, bagi dengan 1.000.
+
+q reaksi = −2.090 J = −2,090 kJ. Tanda negatif tetap dipertahankan.
+
+Nyatakan basis per mol
+
+Untuk jumlah reaksi model 1:1 sebanyak n = 0,050 mol:
+
+ΔH molar = q reaksi / n = −2,090 / 0,050 = −41,8 kJ/mol reaksi.
+
+Nilai per mol berbeda dari kalor total pada percobaan.
+
+Kalor sama, massa berbeda
+
+Jika kalor tetap +2.090 J dan massa larutan menjadi 200 g, kenaikan suhu menjadi setengah.
+
+ΔT = 2.090 / (200 × 4,18) = +2,5 °C. Dari 25 °C, suhu akhir menjadi 27,5 °C.
+
+Periksa tiga hal sebelum selesai
+
+Bagian mana: larutan atau reaksi? Tanda mana: menerima atau melepas? Satuan mana: J, kJ, atau kJ/mol?
+
+Perubahan suhu saja belum cukup; massa dan kalor jenis juga berperan.

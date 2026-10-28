@@ -1,0 +1,56 @@
+[
+  {
+    "id": "m1",
+    "seconds": "90.000000",
+    "bytes": 862493,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "resolution": "1280x720",
+    "fps": "24/1",
+    "frames": "2160",
+    "faststart": true,
+    "audioStreams": 0,
+    "fullDecode": "passed",
+    "sampleSeconds": [
+      3,
+      45.0,
+      87
+    ]
+  },
+  {
+    "id": "m2",
+    "seconds": "92.000000",
+    "bytes": 763093,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "resolution": "1280x720",
+    "fps": "24/1",
+    "frames": "2208",
+    "faststart": true,
+    "audioStreams": 0,
+    "fullDecode": "passed",
+    "sampleSeconds": [
+      3,
+      49,
+      89
+    ]
+  },
+  {
+    "id": "m3",
+    "seconds": "100.000000",
+    "bytes": 1009099,
+    "codec": "h264",
+    "pixelFormat": "yuv420p",
+    "resolution": "1280x720",
+    "fps": "24/1",
+    "frames": "2400",
+    "faststart": true,
+    "audioStreams": 0,
+    "fullDecode": "passed",
+    "sampleSeconds": [
+      3,
+      50.0,
+      97
+    ]
+  }
+]

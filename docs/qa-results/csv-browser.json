@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-20",
+  "scope": "Berkas CSV yang benar-benar diunduh melalui tombol browser",
+  "row_counts": {
+    "summary": 9,
+    "answers": 10,
+    "activities": 18,
+    "moved": 6,
+    "formula": 12
+  },
+  "checks": [
+    {
+      "check": "Unduhan UTF-8 BOM untuk kelima berkas",
+      "result": "Lulus"
+    },
+    {
+      "check": "Ringkasan awal: sembilan baris, nilai 0 berbeda dari kosong",
+      "result": "Lulus"
+    },
+    {
+      "check": "Percobaan parsial: lima baris dengan nilai akhir kosong",
+      "result": "Lulus"
+    },
+    {
+      "check": "Empat soal belum dijawab tidak ditandai salah",
+      "result": "Lulus"
+    },
+    {
+      "check": "Koma, kutip, dan baris baru respons kasus tetap utuh",
+      "result": "Lulus"
+    },
+    {
+      "check": "Satu run tanpa catatan tetap Selesai",
+      "result": "Lulus"
+    },
+    {
+      "check": "Ekspor mengikuti kelas baru, dua siswa dan enam baris",
+      "result": "Lulus"
+    },
+    {
+      "check": "Awalan formula dinetralkan; isi catatan multiline utuh",
+      "result": "Lulus"
+    }
+  ]
+}

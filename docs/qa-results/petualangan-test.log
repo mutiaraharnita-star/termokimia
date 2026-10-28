@@ -1,0 +1,14 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> termokimia-xi@0.2.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /workspace/scratch/27e0afb8a7c6/termokimia-xi
+
+
+ Test Files  7 passed (7)
+      Tests  73 passed (73)
+   Start at  11:47:01
+   Duration  1.07s (tests 41%, transform 29%, import 27%, worker 4%)
+

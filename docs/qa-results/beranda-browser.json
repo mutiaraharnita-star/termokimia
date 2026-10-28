@@ -1,0 +1,216 @@
+{
+  "checks": [
+    {
+      "check": "Lihat modul dengan keyboard",
+      "url": "http://terminal.local:4173/#/",
+      "geometry": {
+        "cards": 3,
+        "focus": "topic-section-title",
+        "headingTop": 109.6875,
+        "navbarBottom": 89
+      }
+    },
+    {
+      "check": "CTA Mulai Belajar",
+      "url": "http://terminal.local:4173/#/demo",
+      "heading": "Pilih ruang belajarmu."
+    },
+    {
+      "check": "Beranda mengikuti profil Citra",
+      "profile": "Profil demo aktif\nCitra Demo\nXI Demo\n\nGanti profil",
+      "statuses": [
+        "Belum dimulai",
+        "Terkunci",
+        "Terkunci"
+      ],
+      "progress": [
+        "0/9 kegiatan0%",
+        "0/9 kegiatan0%",
+        "0/9 kegiatan0%"
+      ]
+    },
+    {
+      "check": "Kartu M2 terkunci",
+      "heading": "Modul ini belum terbuka.",
+      "remaining": 9,
+      "currentNavigation": "Ruang siswa"
+    },
+    {
+      "check": "Kuis parsial tanpa item selesai",
+      "profile": "Profil demo aktif\nCitra Demo\nXI Demo\n\nGanti profil",
+      "progress": "01\nSedang dipelajari\nKonsep Dasar Termokimia\n\nHubungkan peristiwa sehari-hari dengan sistem, arah kalor, tanda ΔH, dan diagram entalpi.\n\nSuhu, kalor, sistem, dan lingkungan.\nEksoterm, endoterm, dan perubahan entalpi.\nTanda ΔH dan diagram entalpi relatif.\n0/9 kegiatan\n0%\n\nKuis berjalan: 1/5 soal dijawab.\n\nMateri · Simulasi · 5 soal kuis\n\nModul tersedia untuk dipelajari.\n\nLanjutkan modul"
+    },
+    {
+      "check": "Progres pulih setelah muat ulang",
+      "quiz": "Kuis berjalan: 1/5 soal dijawab."
+    },
+    {
+      "check": "Menu HP Escape",
+      "expanded": "false",
+      "focusReturned": true
+    },
+    {
+      "check": "Pratinjau keyboard dan balik reaksi",
+      "value": "+40 kilojoule, Endoterm",
+      "progress": [
+        "0/9 kegiatan0%",
+        "0/9 kegiatan0%",
+        "0/9 kegiatan0%"
+      ]
+    },
+    {
+      "check": "Fokus judul modul pada HP",
+      "geometry": {
+        "focus": true,
+        "navbarBottom": 76,
+        "top": 124.28125
+      }
+    },
+    {
+      "check": "Navbar Panduan",
+      "url": "http://terminal.local:4173/#/bantuan",
+      "current": "Panduan"
+    },
+    {
+      "check": "Kartu bersama di ruang siswa",
+      "label": "Lanjutkan modul",
+      "quiz": "Kuis berjalan: 1/5 soal dijawab."
+    },
+    {
+      "check": "Navbar Ruang guru",
+      "url": "http://terminal.local:4173/#/guru",
+      "heading": "Lihat proses, pahami kemajuannya.",
+      "current": "Ruang guru"
+    }
+  ],
+  "responsive": [
+    {
+      "width": 360,
+      "layout": {
+        "clientWidth": 345,
+        "scrollWidth": 345
+      },
+      "cards": 3,
+      "columns": "305px",
+      "bodyFonts": [
+        "16px"
+      ],
+      "targets": [
+        {
+          "height": 44,
+          "text": "Buka menu navigasi",
+          "width": 44
+        },
+        {
+          "height": 51,
+          "text": "Mulai Belajar",
+          "width": 159
+        },
+        {
+          "height": 44,
+          "text": "Lihat modul",
+          "width": 105
+        },
+        {
+          "height": 48,
+          "text": "Lanjutkan modul",
+          "width": 259
+        },
+        {
+          "height": 48,
+          "text": "Lihat prasyarat",
+          "width": 259
+        },
+        {
+          "height": 48,
+          "text": "Lihat prasyarat",
+          "width": 259
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "layout": {
+        "clientWidth": 753,
+        "scrollWidth": 753
+      },
+      "cards": 3,
+      "columns": "713px",
+      "bodyFonts": [
+        "16px"
+      ],
+      "targets": [
+        {
+          "height": 44,
+          "text": "Buka menu navigasi",
+          "width": 44
+        },
+        {
+          "height": 51,
+          "text": "Mulai Belajar",
+          "width": 166
+        },
+        {
+          "height": 44,
+          "text": "Lihat modul",
+          "width": 110
+        },
+        {
+          "height": 48,
+          "text": "Lanjutkan modul",
+          "width": 661
+        },
+        {
+          "height": 48,
+          "text": "Lihat prasyarat",
+          "width": 661
+        },
+        {
+          "height": 48,
+          "text": "Lihat prasyarat",
+          "width": 661
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "layout": {
+        "clientWidth": 1351,
+        "scrollWidth": 1351
+      },
+      "cards": 3,
+      "columns": "374.656px 374.672px 374.656px",
+      "bodyFonts": [
+        "16px"
+      ],
+      "targets": [
+        {
+          "height": 51,
+          "text": "Mulai Belajar",
+          "width": 172
+        },
+        {
+          "height": 44,
+          "text": "Lihat modul",
+          "width": 110
+        },
+        {
+          "height": 48,
+          "text": "Lanjutkan modul",
+          "width": 323
+        },
+        {
+          "height": 48,
+          "text": "Lihat prasyarat",
+          "width": 323
+        },
+        {
+          "height": 48,
+          "text": "Lihat prasyarat",
+          "width": 323
+        }
+      ]
+    }
+  ],
+  "applicationErrors": []
+}

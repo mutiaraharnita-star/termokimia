@@ -1,0 +1,58 @@
+WEBVTT
+
+NOTE Teks penjelasan; video ini tidak memiliki audio.
+
+00:00:00.000 --> 00:00:05.960
+Model ilustrasi: kalor wadah dan kehilangan kalor ke luar diabaikan; kalor jenis tetap, tanpa perubahan fase.
+
+00:00:06.000 --> 00:00:11.960
+Tekanan tetap; hanya kerja ekspansi atau kompresi. Massa yang dipakai ialah massa larutan.
+
+00:00:12.000 --> 00:00:16.960
+Massa larutan 100 g. Suhu awal 25 °C dan suhu akhir 30 °C.
+
+00:00:17.000 --> 00:00:21.960
+ΔT = T akhir − T awal = 30 − 25 = +5 °C.
+
+00:00:22.000 --> 00:00:25.960
+Gunakan kalor jenis model c = 4,18 J/(g·°C).
+
+00:00:26.000 --> 00:00:29.960
+q larutan = mcΔT = 100 × 4,18 × 5 = +2.090 J.
+
+00:00:30.000 --> 00:00:33.960
+Tanda positif berarti larutan menerima kalor.
+
+00:00:34.000 --> 00:00:39.960
+Pada model ideal, q reaksi + q larutan = 0.
+
+00:00:40.000 --> 00:00:45.960
+q reaksi = −q larutan = −2.090 J. Reaksi bersifat eksoterm; larutan menghangat.
+
+00:00:46.000 --> 00:00:50.960
+1 kJ = 1.000 J. Untuk mengubah J menjadi kJ, bagi dengan 1.000.
+
+00:00:51.000 --> 00:00:55.960
+q reaksi = −2.090 J = −2,090 kJ. Tanda negatif tetap dipertahankan.
+
+00:00:56.000 --> 00:01:00.293
+Untuk jumlah reaksi model 1:1 sebanyak n = 0,050 mol:
+
+00:01:00.333 --> 00:01:04.627
+ΔH molar = q reaksi / n = −2,090 / 0,050 = −41,8 kJ/mol reaksi.
+
+00:01:04.667 --> 00:01:08.960
+Nilai per mol berbeda dari kalor total pada percobaan.
+
+00:01:09.000 --> 00:01:15.460
+Jika kalor tetap +2.090 J dan massa larutan menjadi 200 g, kenaikan suhu menjadi setengah.
+
+00:01:15.500 --> 00:01:21.960
+ΔT = 2.090 / (200 × 4,18) = +2,5 °C. Dari 25 °C, suhu akhir menjadi 27,5 °C.
+
+00:01:22.000 --> 00:01:26.960
+Bagian mana: larutan atau reaksi? Tanda mana: menerima atau melepas? Satuan mana: J, kJ, atau kJ/mol?
+
+00:01:27.000 --> 00:01:31.960
+Perubahan suhu saja belum cukup; massa dan kalor jenis juga berperan.
+

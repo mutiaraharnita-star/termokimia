@@ -1,0 +1,81 @@
+/* Beranda dan kartu modul bersama: keterbacaan, status, dan navigasi. */
+.navbar .navbar-brand { min-height: 44px; }
+.navbar .navbar-link { font-size: 14px; }
+.navbar .navbar-link[aria-current="page"] { color: var(--green); font-weight: 800; }
+.navbar .navbar-brand-caption { font-size: 10px; }
+.navbar .navbar-start { min-height: 44px; }
+
+.home-page .hero-eyebrow { font-size: 11px; letter-spacing: 1.1px; text-transform: uppercase; }
+.home-page .hero-start, .home-page .hero-secondary { font-size: 15px; }
+.home-page .hero-trust p { font-size: 14px; color: #576a51; }
+.home-page .hero-trust strong { color: #3d5c43; }
+.home-page .lab-label { font-size: 10px; letter-spacing: .8px; color: #52674a; }
+.home-page .lab-kicker { font-size: 11px; color: #5b6e50; letter-spacing: 1px; }
+.home-page .reaction-tabs button { font-size: 14px; color: #4c6443; }
+.home-page .lab-control label { font-size: 14px; }
+.home-page .lab-control output span, .home-page .range-labels { font-size: 12px; color: #52674a; }
+.home-page .lab-result { flex-wrap: wrap; }
+.home-page .heat-direction, .home-page .reverse-button { font-size: 13px; }
+.home-page .model-details { font-size: 16px; color: #52674a; }
+.home-page .model-details summary { min-height: 44px; padding-block: 13px; font-size: 13px; }
+.home-page .model-details a { display: inline-flex; align-items: center; min-height: 44px; }
+.home-page .lab-caption { font-size: 13px; color: #5b6e50; line-height: 1.7; }
+.home-page .ribbon-inner span { font-size: 14px; line-height: 1.7; }
+.home-page .guide-link { font-size: 14px; }
+.home-page .guide-steps p { font-size: 16px; }
+.home-page .guide-step-label { font-size: 11px; color: #5f7453; }
+
+.topic-section .topic-eyebrow { font-size: 11px; }
+.topic-section .topic-section-title { scroll-margin-top: 32px; max-width: none; }
+.topic-section .topic-section-title:focus-visible { outline: 3px solid #b57737; outline-offset: 6px; border-radius: 3px; }
+.topic-section .topic-section-intro { font-size: 16px; }
+.topic-section .topic-sequence-note { font-size: 13px; color: #52674a; }
+.topic-profile { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding-block: 17px; margin-bottom: 25px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.topic-profile p { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 14px; line-height: 1.7; min-width: 0; }
+.topic-profile p > span { font-size: 13px; color: #5d6d56; }
+.topic-profile strong { font-size: 16px; overflow-wrap: anywhere; }
+.topic-profile .text-button { flex-shrink: 0; font-size: 14px; }
+.topic-data-note { padding: 16px 20px; margin-bottom: 24px; border: 1px solid var(--border); border-radius: 8px; font-size: 16px; line-height: 1.8; }
+.topic-section .topic-card { min-width: 0; }
+.topic-section .topic-number { color: #7f9074; }
+.topic-section .status-badge { font-size: 12px; color: #4f6447; }
+.topic-section .status-locked { color: #75603d; }
+.topic-section .status-in_progress { color: #365f79; }
+.topic-section .status-completed { color: #416532; }
+.topic-section .topic-description { font-size: 16px; }
+.topic-section .topic-tags { display: grid; gap: 10px; margin-block: 20px 25px; }
+.topic-section .topic-tag { display: flex; align-items: start; gap: 9px; border: 0; border-radius: 0; padding: 0; background: transparent; color: #52674a; font-size: 16px; line-height: 1.7; }
+.topic-section .topic-tag::before { content: ''; width: 4px; height: 4px; flex: 0 0 4px; border-radius: 50%; background: #7c9168; margin-top: 11px; }
+.topic-section .topic-meta { flex-wrap: wrap; color: #52674a; font-size: 13px; line-height: 1.7; margin-bottom: 12px; }
+.topic-prerequisite { min-height: 48px; margin-bottom: 14px; font-size: 14px; line-height: 1.7; color: #5d6d56; }
+.topic-quiz-progress { color: #365f79; font-size: 14px; line-height: 1.7; margin-bottom: 13px; }
+.topic-section .progress-label, .topic-section .progress-label strong { font-size: 14px; }
+.topic-section .topic-open { min-height: 48px; font-size: 14px; }
+.topic-completion-note { max-width: 820px; font-size: 16px; line-height: 1.9; color: #5d6d56; margin-top: 25px; }
+.topic-completion-note strong { color: var(--green); }
+
+@media (max-width: 1050px) and (min-width: 821px) {
+  .navbar .navbar-links { gap: 14px; }
+  .navbar .navbar-navigation { gap: 18px; }
+  .navbar .navbar-link { font-size: 13px; }
+}
+@media (max-width: 900px) {
+  .topic-section .topic-title { min-height: 0; }
+  .topic-section .topic-prerequisite { min-height: 0; }
+  .topic-section .topic-sequence-note { display: flex; }
+  .topic-section .topic-section-heading { flex-direction: column; align-items: start; gap: 14px; }
+  .home-page .lab-label { font-size: 10px; }
+}
+@media (max-width: 600px) {
+  .navbar .navbar-link { font-size: 16px; }
+  .home-page .hero-eyebrow { font-size: 10px; letter-spacing: .65px; flex-wrap: wrap; }
+  .home-page .hero-actions { gap: 12px 22px; }
+  .home-page .hero-start, .home-page .hero-secondary { font-size: 14px; }
+  .home-page .lab-heading h2 { font-size: 21px; }
+  .home-page .lab-symbol { display: none; }
+  .home-page .lab-result { align-items: start; gap: 4px; }
+  .home-page .heat-direction { min-height: 44px; }
+  .topic-profile { align-items: start; flex-direction: column; gap: 6px; }
+  .topic-profile p { align-items: start; flex-direction: column; gap: 2px; }
+  .topic-section .topic-card { padding: 24px 22px; }
+}

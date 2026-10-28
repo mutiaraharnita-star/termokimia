@@ -1,0 +1,182 @@
+{
+  "contentVersion": "2.0-video-1",
+  "language": "id",
+  "hasAudio": false,
+  "formatLabel": "Video penjelasan teks dan diagram bertransisi, tanpa suara.",
+  "source": "PRD v2 Lampiran B; angka diperiksa terhadap KIM01–KIM06.",
+  "videos": [
+    {
+      "id": "m1",
+      "title": "Ke mana kalor berpindah?",
+      "videoSrc": "/videos/m1.mp4",
+      "poster": "/videos/m1-poster.jpg",
+      "captions": "/videos/m1-id.vtt",
+      "transcript": "/videos/m1-transcript.txt",
+      "durationSeconds": 90.0,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "hasAudio": false,
+      "captionStatus": "Teks terlihat pada video; VTT tambahan dan transkrip setara disediakan.",
+      "chapters": [
+        {
+          "start": 0.0,
+          "end": 10.0,
+          "title": "Tetapkan sistem terlebih dahulu"
+        },
+        {
+          "start": 10.0,
+          "end": 21.0,
+          "title": "Ikuti arah perpindahan kalor"
+        },
+        {
+          "start": 21.0,
+          "end": 33.0,
+          "title": "Hubungkan kalor dengan entalpi"
+        },
+        {
+          "start": 33.0,
+          "end": 44.0,
+          "title": "Tanda mengikuti sistem"
+        },
+        {
+          "start": 44.0,
+          "end": 58.0,
+          "title": "Hitung produk dikurangi reaktan"
+        },
+        {
+          "start": 58.0,
+          "end": 70.0,
+          "title": "Balik arah, balik tanda ΔH"
+        },
+        {
+          "start": 70.0,
+          "end": 80.0,
+          "title": "Baca sumbu diagram dengan tepat"
+        },
+        {
+          "start": 80.0,
+          "end": 90.0,
+          "title": "Gunakan empat langkah ini"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Larutan hangat, reaksi bertanda apa?",
+      "videoSrc": "/videos/m2.mp4",
+      "poster": "/videos/m2-poster.jpg",
+      "captions": "/videos/m2-id.vtt",
+      "transcript": "/videos/m2-transcript.txt",
+      "durationSeconds": 92.0,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "hasAudio": false,
+      "captionStatus": "Teks terlihat pada video; VTT tambahan dan transkrip setara disediakan.",
+      "chapters": [
+        {
+          "start": 0.0,
+          "end": 12.0,
+          "title": "Mulai dari model kalorimeter"
+        },
+        {
+          "start": 12.0,
+          "end": 22.0,
+          "title": "Hitung perubahan suhu"
+        },
+        {
+          "start": 22.0,
+          "end": 34.0,
+          "title": "Larutan menerima kalor"
+        },
+        {
+          "start": 34.0,
+          "end": 46.0,
+          "title": "Reaksi melepaskan kalor"
+        },
+        {
+          "start": 46.0,
+          "end": 56.0,
+          "title": "Ubah joule menjadi kilojoule"
+        },
+        {
+          "start": 56.0,
+          "end": 69.0,
+          "title": "Nyatakan basis per mol"
+        },
+        {
+          "start": 69.0,
+          "end": 82.0,
+          "title": "Kalor sama, massa berbeda"
+        },
+        {
+          "start": 82.0,
+          "end": 92.0,
+          "title": "Periksa tiga hal sebelum selesai"
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Tiga cara menggunakan data ΔH",
+      "videoSrc": "/videos/m3.mp4",
+      "poster": "/videos/m3-poster.jpg",
+      "captions": "/videos/m3-id.vtt",
+      "transcript": "/videos/m3-transcript.txt",
+      "durationSeconds": 100.0,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "hasAudio": false,
+      "captionStatus": "Teks terlihat pada video; VTT tambahan dan transkrip setara disediakan.",
+      "chapters": [
+        {
+          "start": 0.0,
+          "end": 8.0,
+          "title": "Pilih metode menurut datanya"
+        },
+        {
+          "start": 8.0,
+          "end": 22.0,
+          "title": "Hess: susun dua tahap reaksi"
+        },
+        {
+          "start": 22.0,
+          "end": 34.0,
+          "title": "Jumlahkan reaksi dan ΔH"
+        },
+        {
+          "start": 34.0,
+          "end": 45.0,
+          "title": "Ubah reaksi, sesuaikan ΔH"
+        },
+        {
+          "start": 45.0,
+          "end": 59.0,
+          "title": "Gunakan entalpi pembentukan"
+        },
+        {
+          "start": 59.0,
+          "end": 68.0,
+          "title": "Koefisien dan fase menentukan"
+        },
+        {
+          "start": 68.0,
+          "end": 79.0,
+          "title": "Energi ikatan: putus dan bentuk"
+        },
+        {
+          "start": 79.0,
+          "end": 90.0,
+          "title": "Tuliskan hasil sebagai estimasi"
+        },
+        {
+          "start": 90.0,
+          "end": 100.0,
+          "title": "Empat pemeriksaan terakhir"
+        }
+      ]
+    }
+  ]
+}
